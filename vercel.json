@@ -1,0 +1,29 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "https://zjyxwj.gamer.gd/$1",
+      "has": [
+        {
+          "type": "host",
+          "value": "zjyxwj.gamer.gd"
+        }
+      ]
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=600, stale-while-revalidate=300"
+        },
+        {
+          "key": "X-Proxy-By",
+          "value": "Vercel Edge Functions"
+        }
+      ]
+    }
+  ]
+}
