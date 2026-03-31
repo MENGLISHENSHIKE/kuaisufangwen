@@ -2,13 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "https://zjyxwj.gamer.gd/$1",
-      "has": [
-        {
-          "type": "host",
-          "value": "zjyxwj.gamer.gd"
-        }
-      ]
+      "destination": "https://zjyxwj.gamer.gd/$1"
     }
   ],
   "headers": [
@@ -21,7 +15,7 @@
         },
         {
           "key": "X-Proxy-By",
-          "value": "Vercel Edge Functions"
+          "value": "Vercel Edge"
         }
       ]
     }
